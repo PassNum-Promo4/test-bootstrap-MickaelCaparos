@@ -1,60 +1,125 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Bootstrap</title>
-</head>
-<body>
-  <img src="http://fakeimg.pl/150/" alt="fakeimage">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <button type="button">Oui</button>
-  <button type="button">Non</button>
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <title>Bootstrap</title>
+  </head>
+  <body>
+  <div>
+
+
+    <!-- div class bg inverse pour un backgroud noir avec un text en blanc -->
+
+    <div class="col-4">
+
+    <div class="bg-inverse text-white">
+    <img  class="img-circle" src="http://fakeimg.pl/150/" alt="fakeimage">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+      rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+      lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+      orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+      Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+    </p>
+    <button type="button">Oui</button>
+    <button type="button">Non</button>
+    </div>
+  </div>
+
+
   <h1>Lorem Ipsum</h1>
-  <p>Aenean eget lorem ac mi tristique volutpat. 
-  Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
-  <a href="#">Super</a>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-</body>
-</html>
+    <p>Aenean eget lorem ac mi tristique volutpat.
+    Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
+
+  <a href="#" class="btn btn-primary">Super</a>
+
+  <!-- J'ai choisi de mettre une div class container pour regrouper mes card
+      div class card pour regrouper mon texte et ma photo avec une bordure j'ai choisi ca pour plus de lisibilité
+      div class card-deck pour mettre les contenu l'un a coté de l'autre
+      div class card m-3 pour un margin
+  -->
+  <div class="container">
+  <div class="card-deck">
+    <div class=".col-12 .col-md-8">
+      <div class="card m-3" style="width: 20rem;">
+        <img class="card-img-top" src="http://fakeimg.pl/300/" alt="fakeimg">
+        <div class="card-body">
+
+          <p class="card-text m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+          rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+          lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+          orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+          Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
+        </div>
+    </div>
+        </div>
+
+
+        <div class="card-deck">
+          <div class=".col-12 .col-md-8">
+            <div class="card m-3" style="width: 20rem;">
+              <img class="card-img-top" src="http://fakeimg.pl/300/" alt="fakeimg">
+
+
+                <p class="card-text m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+                rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+                lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+                orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+                Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
+              </div>
+          </div>
+              </div>
+            </div>
+  </div>
+  </div>
+
+              <div class="container">
+              <div class="card-deck">
+                <div class=".col-12 .col-md-8">
+                  <div class="card m-3" style="width: 20rem;">
+                    <img class="card-img-top" src="http://fakeimg.pl/300/" alt="fakeimg">
+                    <div class="card-body">
+
+                      <p class="card-text m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+                      rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+                      lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+                      orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+                      Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
+                    </div>
+                </div>
+                    </div>
+
+
+
+
+                    <div class="card-deck">
+                      <div class=".col-12 .col-md-8">
+                        <div class="card m-3" style="width: 20rem;">
+                          <img class="card-img-top" src="http://fakeimg.pl/300/" alt="fakeimg">
+                          <div class="card-body">
+
+                            <p class="card-text m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+                            rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+                            lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+                            orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+                            Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
+                          </div>
+                      </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+  </body>
+  </html>
